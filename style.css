@@ -3,7 +3,7 @@
 -------------------- */
 
 :root {
-  --theme-color: #0800a0;
+  --theme-color: #0025a0;
 }
 
 * {
@@ -37,6 +37,18 @@ h1, h2, h3 {
 a {
   color: var(--theme-color);
   text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+
+/* リンクの後ろに自動で「↗」をつける */
+a::after {
+  content: ' ↗';
+  font-size: 0.85em;
+}
+
+a:hover {
+  opacity: 0.6;
 }
 
 /* --------------------
